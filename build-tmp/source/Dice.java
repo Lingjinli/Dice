@@ -17,11 +17,29 @@ public class Dice extends PApplet {
 public void setup()
 {
 	noLoop();
+	size(500,500);
+	background(169,0,0);
 }
 public void draw()
 {
 	Die bob = new Die(25,25);
 	bob.show();
+	Die bobby = new Die(75,75);
+	bobby.show();
+	Die thomas = new Die(125,125);
+	thomas.show();
+	Die aidan = new Die(175,175);
+	aidan.show();
+	Die aaron = new Die(225,225);
+	aaron.show();
+	Die anya = new Die(275,275);
+	anya.show();
+	Die cole = new Die(325,325);
+	cole.show();
+	Die william = new Die(375,375);
+	william.show();
+	Die cooley = new Die(425,425);
+	cooley.show();
 }
 public void mousePressed()
 {
@@ -76,7 +94,7 @@ class Die //models one single dice cube
 			ellipse(myX + 40, myY+15, 15, 15);
 			ellipse(myX + 10, myY+40, 15, 15);
 			ellipse(myX + 25, myY +27, 15, 15);
-		} 
+		}
 		else if (roll == 6)
 		{
 			ellipse (myX + 10, myY + 15,15,15);
