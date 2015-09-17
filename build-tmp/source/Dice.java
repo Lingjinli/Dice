@@ -42,6 +42,7 @@ public void draw()
 	cooley.show();
 	int total;
 	total = bob.rolls + bobby.rolls + thomas.rolls + aidan.rolls + aaron.rolls + anya.rolls + cole.rolls + william.rolls + cooley.rolls;
+	fill(0);
 	text ("Total: " + total, 210,490);
 
 }
