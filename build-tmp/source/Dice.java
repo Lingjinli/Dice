@@ -40,16 +40,24 @@ public void draw()
 	william.show();
 	Die cooley = new Die(425,425);
 	cooley.show();
+	int total;
+	total = bob.rolls + bobby.rolls + thomas.rolls + aidan.rolls + aaron.rolls + anya.rolls + cole.rolls + william.rolls + cooley.rolls;
+	text ("Total: " + total, 210,490);
+
 }
+
 public void mousePressed()
 {
 	redraw();
+	fill(169,0,0);
+	noStroke();
+	rect(207,475,55,35);
 }
 class Die //models one single dice cube
 {
 	int myX;
 	int myY;
-	int roll;
+	int rolls;
 	Die(int x, int y) 
 	{
 		myX = x;
@@ -58,36 +66,36 @@ class Die //models one single dice cube
 	}
 	public void roll()
 	{
-        roll = (int)(Math.random()*6+1);
+        rolls= (int)(Math.random()*6+1);
 	}
 	public void show()
 	{
 		fill (255,255,255);
 		rect (myX, myY, 50, 50);
 		fill (0,0,0);
-		if (roll == 1)
+		if (rolls == 1)
 		{
 			ellipse(myX + 25, myY +27, 15, 15);
 		} 
-		else if (roll == 2)
+		else if (rolls == 2)
 		{
 			ellipse (myX + 10, myY + 15,15,15);
 			ellipse (myX + 40, myY + 40,15,15);
 		}
-		else if (roll == 3)
+		else if (rolls == 3)
 		{
 			ellipse (myX + 10, myY + 15,15,15);
 			ellipse (myX + 40, myY + 40,15,15);
 			ellipse(myX + 27, myY +27, 15, 15);
 		} 
-		else if (roll == 4)
+		else if (rolls == 4)
 		{
 			ellipse (myX + 10, myY + 15,15,15);
 			ellipse (myX + 40, myY + 40,15,15);
 			ellipse(myX + 40, myY+15, 15, 15);
 			ellipse(myX + 10, myY+40, 15, 15);
 		} 
-		else if (roll == 5)
+		else if (rolls == 5)
 		{
 			ellipse (myX + 10, myY + 15,15,15);
 			ellipse (myX + 40, myY + 40,15,15);
@@ -95,7 +103,7 @@ class Die //models one single dice cube
 			ellipse(myX + 10, myY+40, 15, 15);
 			ellipse(myX + 25, myY +27, 15, 15);
 		}
-		else if (roll == 6)
+		else if (rolls == 6)
 		{
 			ellipse (myX + 10, myY + 15,15,15);
 			ellipse (myX + 40, myY + 40,15,15);
