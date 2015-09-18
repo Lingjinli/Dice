@@ -16,9 +16,10 @@ public class Dice extends PApplet {
 
 public void setup()
 {
-	noLoop();
+	
 	size(500,500);
 	background(169,0,0);
+	noLoop();
 }
 public void draw()
 {

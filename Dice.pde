@@ -1,13 +1,14 @@
 void setup()
 {
-	noLoop();
+	
 	size(500,500);
 	background(169,0,0);
+	noLoop();
 }
 void draw()
 {
 	Die bob = new Die(25,25);
-	bob.show();
+	dylan.show();
 	Die bobby = new Die(75,75);
 	bobby.show();
 	Die thomas = new Die(125,125);
@@ -25,7 +26,7 @@ void draw()
 	Die cooley = new Die(425,425);
 	cooley.show();
 	int total;
-	total = bob.rolls + bobby.rolls + thomas.rolls + aidan.rolls + aaron.rolls + anya.rolls + cole.rolls + william.rolls + cooley.rolls;
+	total = dylan.rolls + bobby.rolls + thomas.rolls + aidan.rolls + aaron.rolls + anya.rolls + cole.rolls + william.rolls + cooley.rolls;
 	fill(0);
 	text ("Total: " + total, 210,490);
 
