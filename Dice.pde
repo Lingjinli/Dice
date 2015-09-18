@@ -7,7 +7,7 @@ void setup()
 }
 void draw()
 {
-	Die bob = new Die(25,25);
+	Die dylan = new Die(25,25);
 	dylan.show();
 	Die bobby = new Die(75,75);
 	bobby.show();
